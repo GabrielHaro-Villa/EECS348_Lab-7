@@ -9,8 +9,11 @@ int main(int argc, char *argv[]) {
         scanf("%d", &score);
 
         // Terminate the program if score is 0 or 1
-        if (score <= 1) {
+        if (score == 0 || score == 1) {
             break;
+        } else if (score < 0) {
+            printf("Invalid score. Please enter a non-negative number.\n");
+            continue;
         }
 
         // Call the function to print the combinations
