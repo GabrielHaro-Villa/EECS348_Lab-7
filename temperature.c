@@ -36,17 +36,18 @@ float kelvin_to_fahrenheit(float kelvin) {
     return fahrenheit;
 }
 
+// Categorizes the temperature based on the celsius value
 void categorize_temperature(float celsius) {
     printf("Temperature category: ");
-    if (celsius <= 0) {
+    if (celsius <= 0) { // if the temp is less than or equal to 0, it is freezing
         printf("Freezing\nWeather advisory: Wear winter clothing, stay indoors\n");
-    } else if (celsius <= 10) {
+    } else if (celsius <= 10) { // else if the temp is less than or equal to 10, it is cold
         printf("Cold\nWeather advisory: Wear a jacket.\n");
-    } else if (celsius <= 25) {
+    } else if (celsius <= 25) { // else if the temp is less than or equal to 25, it is comfortable
         printf("Comfortable\nWeather advisory: You should feel comfortable.\n");
-    } else if (celsius <= 35) {
+    } else if (celsius <= 35) { // else if the temp is less than or equal to 35, it is hot
         printf("Hot\nWeather advisory: wear summer clothing.\n");
-    } else {
+    } else { // else, if it is over 35, it is extreme heat
         printf("Extreme heat\nWeather advisory: Stay indoors, wear light clothing.\n");
     }
 }
